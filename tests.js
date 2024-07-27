@@ -31,4 +31,28 @@ describe('sayHello', function() {
   it('sayHello("Pat") should return "Hello, Pat!"', function(){
     expect(sayHello("Pat")).toBe("Hello, Pat!");
   });
+  it('sayHello() should return "Hello, World!', function(){
+    expect(sayHello()).toBe("Hello, World!");
+  });
+  it('sayHello(true) should return "Hello, World!"', function(){
+    expect(sayHello(true)).toBe("Hello, World!");
+  });
+  it('sayHello(false) should return "Hello, World!"', function(){
+    expect(sayHello(false)).toBe("Hello, World!");
+  });
+  it('sayHello(null) should return "Hello, World!"', function(){
+    expect(sayHello(null)).toBe("Hello, World!");
+  });
+  it('sayHello("") should return "Hello, World!"', function(){
+    expect(sayHello("")).toBe("Hello, World!");
+  });
+  it('sayHello(2.3) should return "Hello, World!"', function(){
+    expect(sayHello(2.3)).toBe("Hello, World!");
+  });
+  it('sayHello("5") should return "Hello, World!"', function(){
+    expect(sayHello("5")).toBe("Hello, World!");
+  });
+  it('sayHello(Array()) should return "Hello, World!"', function(){
+    expect(sayHello(Array())).toBe("Hello, World!");
+  });  
 });
