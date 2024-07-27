@@ -56,3 +56,28 @@ describe('sayHello', function() {
     expect(sayHello(Array())).toBe("Hello, World!");
   });  
 });
+
+//Unit tests for isFive function.
+describe('isFive', function(){
+  it('should be defined as a function', function(){
+    expect(typeof isFive).toBe('function');
+  });
+  it('should return a boolean', function(){
+    expect(typeof isFive()).toBe('boolean');
+  });
+  it('should return true when passed 5', function(){
+    expect(isFive(5)).toBe(true);
+  });
+  it('should return true when passed "5"', function(){
+    expect(isFive("5")).toBe(true);
+  });
+  it('should return true when passed "five"', function(){
+    expect(isFive("five")).toBe(true);
+  });
+  it('should return true when passed "FiVe"', function(){
+    expect(isFive("FiVe")).toBe(true);
+  });
+  it('should return false when passed 6', function(){
+    expect(isFive(6)).toBe(false);
+  });
+})
