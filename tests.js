@@ -151,8 +151,11 @@ describe('isVowel', function(){
 });
 
 //Unit tests for add function.
-decribe('add', function(){
+describe('add', function(){
   it('should be defined as a function', function(){
     expect(typeof add).toBe('function');
+  });
+  it('add(2,3) returns 5', function(){
+    expect(add(2,3)).toBe(5);
   });
 })
