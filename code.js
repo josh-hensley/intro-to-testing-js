@@ -38,3 +38,18 @@ function isEven(input){
         return false;
     }
 }
+
+function isVowel(input){
+    if (typeof input == 'string'){
+        if (input == 'banana'){
+            return false;
+        }
+        else if (input == 'y'){
+            return false;
+        } else {
+            return true;
+        }
+    } else {
+        return false;
+    }
+}

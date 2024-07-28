@@ -117,4 +117,35 @@ describe('isEven', function(){
   it('isEven() returns false', function(){
     expect(isEven()).toBe(false);
   });
-})
+});
+
+//Unit tests for isVowel.
+describe('isVowel', function(){
+  it('should be defined as a function', function(){
+    expect(typeof isVowel).toBe('function');
+  });
+  it('should return a boolean', function(){
+    expect(typeof isVowel()).toBe('boolean');
+  });
+  it('isVowel("a") returns true', function(){
+    expect(isVowel("a")).toBe(true);
+  });
+  it('isVowel("A") returns true', function(){
+    expect(isVowel("A")).toBe(true);
+  });
+  it('isVowel("y") returns false', function(){
+    expect(isVowel("y")).toBe(false);
+  });
+  it('isVowel(4) returns false', function(){
+    expect(isVowel(4)).toBe(false);
+  });
+  it('isVowel(true) or isVowel(false) returns false', function(){
+    expect(isVowel(true)).toBe(false);
+  });
+  it('isVowel("banana") returns false', function(){
+    expect(isVowel("banana")).toBe(false);
+  });
+  it('isVowel() returns false', function(){
+    expect(isVowel()).toBe(false);
+  });
+});
