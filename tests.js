@@ -149,3 +149,10 @@ describe('isVowel', function(){
     expect(isVowel()).toBe(false);
   });
 });
+
+//Unit tests for add function.
+decribe('add', function(){
+  it('should be defined as a function', function(){
+    expect(typeof add).toBe('function');
+  });
+})
