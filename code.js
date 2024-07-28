@@ -41,13 +41,11 @@ function isEven(input){
 
 function isVowel(input){
     if (typeof input == 'string'){
-        if (input == 'banana'){
-            return false;
-        }
-        else if (input == 'y'){
-            return false;
-        } else {
+        if (input.toLowerCase() == 'a' || input.toLowerCase() == 'e' || input.toLowerCase() == 'i' || input.toLowerCase() == 'o' || input.toLowerCase() == 'u'){
             return true;
+        }
+        else {
+            return false;
         }
     } else {
         return false;
